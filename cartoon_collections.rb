@@ -21,5 +21,8 @@ end
 def find_the_cheese(foods)
   cheese_types = ["cheddar", "gouda", "camembert"]
   foods.each() do |f|
-    if food.empty? 
+    if (cheese_types & foods).empty?
+      return f
+    end
+  end
 end
