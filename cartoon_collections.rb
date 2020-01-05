@@ -15,12 +15,7 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(calls)
-  result = false
-  calls.reduce() do |c|
-    if c.length > 4
-      result = true
-    end
-  end
+  calls.any?
 end
 
 def find_the_cheese(cheese)
