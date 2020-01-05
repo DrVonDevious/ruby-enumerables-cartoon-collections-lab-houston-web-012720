@@ -16,7 +16,7 @@ end
 
 def long_planeteer_calls(calls)
   result = false
-  calls.map() do |c|
+  calls.reduce() do |c|
     if c.length > 4
       result = true
     end
